@@ -11,16 +11,16 @@
 	// Constants
 	const values = [
 		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			title: "Engineering excellence",
+			description: "Building robust, scalable systems that eliminate deployment failures and streamline complex workflows into intuitive interfaces."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "Developer-first approach",
+			description: "Understanding the technical challenges engineering teams face and crafting solutions that integrate seamlessly into existing workflows."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Operational efficiency",
+			description: "Reducing the 40% of time teams waste on debugging deployments, enabling faster feature delivery and sustainable growth."
 		}
 	];
 </script>
@@ -44,61 +44,27 @@
 />
 
 <!-- Our Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	generating
 	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
+	title="Leadership."
+	subtitle="Driving innovation in inventory management."
 	stakeholders={[
 		{
-			name: "Alex Morgan",
+			name: "Fabrizio Soldano",
 			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		}
-	]}
-/>
-
-<StakeholderGrid
-	generating
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
+			bio: "Passionate about simplifying complex workflows and empowering engineering teams to ship faster.",
+			image: "/generated/image-professional-headshot-of-a-male-founder-.webp"
 		}
 	]}
 />
 
 <!-- CTA Section -->
 <CallToAction
-	generating
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="Stop debugging deployments"
+	subtitle="Start shipping features weekly"
+	description="Join engineering managers at fast-growing SaaS companies who've reclaimed 40% of their time and transformed their deployment process from a bottleneck into a competitive advantage."
+	imageSrc="/generated/image-a-professional-engineering-manager-stand.webp"
 />
