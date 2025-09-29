@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconActivity from "~icons/lucide/activity";
+	import IconShield from "~icons/lucide/shield";
+	import IconRotateCcw from "~icons/lucide/rotate-ccw";
+	import IconGitBranch from "~icons/lucide/git-branch";
+	import IconBarChart3 from "~icons/lucide/bar-chart-3";
+	import IconTrendingUp from "~icons/lucide/trending-up";
 </script>
 
 <Hero
@@ -26,60 +34,74 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Simple insights for complex systems"
+	text="Stop spending 40% of your week debugging failed deployments. Our platform gives engineering managers clear, reliable insight into what's breaking — and why — so teams can spend more time shipping features, not fixing builds.
+
+Modern devops stacks are powerful, but complex. We simplify them into intuitive dashboards that surface the right signals at the right time — no digging through logs or endless Slack threads required."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Chen",
+			position: "VP of Engineering",
+			company: "StreamlineIO",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We went from 12-hour deployment cycles to 45 minutes. Our team now ships features weekly instead of monthly, and deployment failures dropped from 40% to under 3%. This saved us $180K in developer time last quarter alone.",
+			image: "/generated/image-professional-headshot-of-a-confident-asi.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Thompson",
+			position: "Engineering Manager",
+			company: "VelocityTech",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before, our team spent 60% of their time debugging production issues. Now it's down to 15%. We eliminated weekend emergency calls and reduced our mean time to recovery from 4 hours to 18 minutes. My engineers are finally building features instead of fighting fires.",
+			image: "/generated/image-professional-headshot-of-an-african-amer.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Isabella Rodriguez",
+			position: "Senior Engineering Manager",
+			company: "ScalePoint",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The automated rollback system prevented three major incidents that would have cost us $300K in SLA penalties. Our confidence in deployments went from 20% to 95%, and we're now shipping 3x faster with zero production anxiety.",
+			image: "/generated/image-professional-headshot-of-a-hispanic-woma.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Ship features faster, debug less"
+	subtitle="Everything you need to eliminate deployment failures and accelerate your release cycles"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Real-time deployment tracking",
+			description: "Monitor every deployment stage with instant alerts that catch issues before they impact users. Never lose sleep over silent failures again.",
+			icon: IconActivity
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Intelligent error prevention",
+			description: "AI-powered analysis identifies potential deployment risks before they happen. Reduce debugging time by 75% and ship with confidence.",
+			icon: IconShield
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "One-click rollback safety",
+			description: "Instantly revert problematic deployments with zero downtime. Your users stay happy while you fix issues without pressure.",
+			icon: IconRotateCcw
+		},
+		{
+			title: "Automated workflow orchestration",
+			description: "Connect your entire toolchain with smart automation that handles complex inventory flows. Focus on building features, not managing processes.",
+			icon: IconGitBranch
+		},
+		{
+			title: "Performance insights dashboard",
+			description: "Track deployment success rates, time-to-recovery metrics, and team velocity in one beautiful interface. Make data-driven decisions effortlessly.",
+			icon: IconBarChart3
+		},
+		{
+			title: "Scale without breaking",
+			description: "Built for teams shipping weekly to thousands of users. Our infrastructure grows with you, maintaining reliability at any scale.",
+			icon: IconTrendingUp
 		}
 	]}
 />
