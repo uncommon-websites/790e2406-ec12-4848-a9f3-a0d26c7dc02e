@@ -105,5 +105,22 @@ Modern devops stacks are powerful, but complex. We simplify them into intuitive 
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Ship faster. Debug less."
+	subtitle="Start free trial"
+	description="Engineers lose 40% of their time chasing deployment issues. Our platform removes the guesswork—so your team can get back to building."
+	imageSrc="/generated/image-a-cheerful-engineering-manager-in-a-mode.webp"
+	callsToAction={[
+		{
+			href: "/get-started",
+			label: "Start free trial",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to sales",
+			variant: "secondary"
+		}
+	]}
+/>
